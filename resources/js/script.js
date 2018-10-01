@@ -36,3 +36,18 @@ while (n < 3) {
     n++;
     x += n;
 }
+
+if (true) {
+    var x = 5;
+  }
+  console.log(x);  // 5
+
+  // THIS WILL CAUSE AN ERROR
+function f() {};
+const f = 5;
+// THIS WILL CAUSE AN ERROR ALSO
+function f() {
+    const g = 5;
+    var g;
+    //statements
+}

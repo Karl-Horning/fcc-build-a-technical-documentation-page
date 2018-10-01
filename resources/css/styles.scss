@@ -9,11 +9,14 @@ $secondary-text: #757575;
 $divider-color: #bdbdbd;
 
 // #BDBDBD
+$bool: #ffa000;
 $code: #eeeeee;
+$const: #ffa000;
 $comment: #757575;
 $function: #2196f3;
 $int: #ffa000;
 $keyword: #673ab7;
+$object: #ffa000;
 $operator: #757575;
 $punctuation: #757575;
 $string: #4caf50;
@@ -128,11 +131,34 @@ code {
 
 code div { white-space: pre; }
 
+.bool { color: $bool; }
 .comment { color: $comment; }
+.const { color: $const; }
 .function { color: $function; }
 .int { color: $int; }
 .keyword { color: $keyword; }
+.object { color: $object; }
 .operator { color: $operator; }
 .punctuation { color: $punctuation; }
 .string { color: $string; }
 .variable { color: $variable; }
+
+code {
+    counter-reset: line;
+
+    div {
+        display: block;
+        line-height: 1.5rem;
+
+        &:before {
+            border-right: $border;
+            color: $secondary-text;
+            counter-increment: line;
+            content: counter(line);
+            display: inline-block;
+            margin-right: 1em;
+            padding: 0 0.5em;
+        }
+    }
+}
+

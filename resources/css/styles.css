@@ -149,8 +149,16 @@ code div {
   white-space: pre;
 }
 
+.bool {
+  color: #ffa000;
+}
+
 .comment {
   color: #757575;
+}
+
+.const {
+  color: #ffa000;
 }
 
 .function {
@@ -163,6 +171,10 @@ code div {
 
 .keyword {
   color: #673ab7;
+}
+
+.object {
+  color: #ffa000;
 }
 
 .operator {
@@ -179,6 +191,23 @@ code div {
 
 .variable {
   color: #ff5252;
+}
+
+code {
+  counter-reset: line;
+}
+code div {
+  display: block;
+  line-height: 1.5rem;
+}
+code div:before {
+  border-right: 1px solid #bdbdbd;
+  color: #757575;
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0 0.5em;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -111,9 +111,9 @@
                         <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
                         <code>
                             <div><span class="keyword">function</span> <span class="function">greetMe</span><span class="punctuation">(</span><span class="variable">yourName</span><span class="punctuation">)</span> <span class="punctuation">{</span></div>
-                            <div>    <span class="function">alert</span><span class="punctuation">(</span><span class="punctuation">"</span><span class="string">Hello </span><span class="punctuation">"</span> <span class="punctuation">+</span> <span class="variable">yourName</span><span class="punctuation">)</span><span class="punctuation">;</span></div>
+                            <div>    <span class="function">alert</span><span class="punctuation">(</span><span class="string">"Hello "</span> <span class="punctuation">+</span> <span class="variable">yourName</span><span class="punctuation">)</span><span class="punctuation">;</span></div>
                             <div><span class="punctuation">}</span></div>
-                            <div><span class="function">greetMe</span><span class="punctuation">(</span><span class="punctuation">"</span><span class="string">Hello World</span><span class="punctuation">"</span><span class="punctuation">)</span><span class="punctuation">;</span></div>
+                            <div><span class="function">greetMe</span><span class="punctuation">(</span><span class="string">"Hello World"</span><span class="punctuation">)</span><span class="punctuation">;</span></div>
                         </code>
                         <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
                     </div>
@@ -156,18 +156,17 @@
                         <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
                         <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
                         <code>
-                            <div>if (true) {</div>
-                            <div>  var x = 5;</div>
-                            <div>}</div>
-                            <div>console.log(x);  // 5</div>      
+                            <div><span class="keyword">if</span> <span class="punctuation">(</span><span class="bool">true</span><span class="punctuation">)</span> <span class="punctuation">{</span></div>
+                            <div>  <span class="keyword">var</span> <span class="variable">x</span> <span class="punctuation">=</span> <span class="int">5</span><span class="punctuation">;</span></div>
+                            <div><span class="punctuation">}</span></div>
+                            <div><span class="object">console</span><span class="punctuation">.</span><span class="function">log</span><span class="punctuation">(</span><span class="variable">x</span><span class="punctuation">)</span><span class="punctuation">;</span> <span class="comment">// 5</span></div>      
                         </code>
                         <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
                         <code>
-                            <div>if (true) {</div>
-                            <div>    let y = 5;</div>
-                            <div>}</div>
-                            <div>console.log(y);</div>
-                            <div>// ReferenceError: y is not defined</div>
+                            <div><span class="keyword">if</span> <span class="punctuation">(</span><span class="bool">true</span><span class="punctuation">)</span> <span class="punctuation">{</span></div>
+                            <div>  <span class="keyword">let</span> <span class="variable">y</span> <span class="punctuation">=</span> <span class="int">5</span><span class="punctuation">;</span></div>
+                            <div><span class="punctuation">}</span></div>
+                            <div><span class="object">console</span><span class="punctuation">.</span><span class="function">log</span><span class="punctuation">(</span><span class="variable">y</span><span class="punctuation">)</span><span class="punctuation">;</span><span class="comment"> // ReferenceError: y is not defined</span></div>      
                         </code>
                     </div>
                 </section>
@@ -188,25 +187,25 @@
                     </header>
                     <div class="main-content">
                         <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
-                        <code>const PI = 3.14;</code>
+                        <code><span class="keyword">const</span> <span class="const">PI</span> <span class="punctuation">=</span> <span class="int">3.14</span><span class="punctuation">;</span></code>
                         <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
                         <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
                         <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
                         <code>
-                            <div>// THIS WILL CAUSE AN ERROR</div>
-                            <div>function f() {};</div>
-                            <div>const f = 5;</div>
-                            <div>// THIS WILL CAUSE AN ERROR ALSO</div>
-                            <div>function f() {</div>
-                            <div>    const g = 5;</div>
-                            <div>    var g;</div>
-                            <div>    //statements</div>
-                            <div>}</div>
+                            <div><span class="comment">// THIS WILL CAUSE AN ERROR</span></div>
+                            <div><span class="keyword">function</span> <span class="function">f</span><span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span><span class="punctuation">}</span><span class="punctuation">;</span></div>
+                            <div><span class="keyword">const</span> <span class="const">f</span> <span class="punctuation">=</span> <span class="int">5</span><span class="punctuation">;</span></div>
+                            <div><span class="comment">// THIS WILL CAUSE AN ERROR ALSO</span></div>
+                            <div><span class="keyword">function</span> <span class="function">f</span><span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span></div>
+                            <div>    <span class="keyword">const</span> <span class="const">g</span> <span class="punctuation">=</span> <span class="int">5</span><span class="punctuation">;</span></div>
+                            <div>    <span class="keyword">var</span> <span class="variable">g</span><span class="punctuation">;</span></div>
+                            <div>    <span class="comment">//statements</span></div>
+                            <div><span class="punctuation">}</span></div>
                         </code>
                         <p>However, object attributes are not protected, so the following statement is executed without problems.</p>
                         <code>
-                            <div>const MY_OBJECT = {"key": "value"};</div>
-                            <div>MY_OBJECT.key = "otherValue";</div>
+                            <div><span class="keyword">const</span> <span class="const">MY_OBJECT</span> <span class="punctuation">=</span> <span class="punctuation">{</span><span class="string">"key"</span><span class="punctuation">:</span> <span class="string">"value"</span><span class="punctuation">}</span><span class="punctuation">;</span></div>
+                            <div><span class="const">MY_OBJECT</span><span class="punctuation">.</span><span class="variable">key</span> <span class="punctuation">=</span> <span class="string">"otherValue"</span><span class="punctuation">;</span></div>
                         </code>
                     </div>
                 </section>
@@ -216,7 +215,7 @@
                         <h2>Data types</h2>
                     </header>
                     <div class="main-content">
-                        <p>The latest ECMAScript standard defines seven data types:</p>
+                        <p>The latest ECMAScript standard defines <strong>seven</strong> data types:</p>
                         <p>
                             <em>Six data types that are primitives:</em>
                         </p>
