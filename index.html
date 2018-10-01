@@ -137,13 +137,19 @@
                     <div class="main-content">
                         <p>You can declare a variable in three ways:</p>
                         <p>With the keyword var. For example,</p>
-                        <code><span class="keyword">var</span> <span class="variable">x</span> <span class="punctuation">=</span> <span class="int">42</span><span class="punctuation">;</span></code>
+                        <code>
+                            <div class="no-count"><span class="keyword">var</span> <span class="variable">x</span> <span class="punctuation">=</span> <span class="int">42</span><span class="punctuation">;</span></div>
+                        </code>
                         <p>This syntax can be used to declare both local and global variables.</p>
                         <p>By simply assigning it a value. For example,</p>
-                        <code><span class="variable">x</span> <span class="punctuation">=</span> <span class="int">42</span><span class="punctuation">;</span></code>
+                        <code>
+                            <div class="no-count"><span class="variable">x</span> <span class="punctuation">=</span> <span class="int">42</span><span class="punctuation">;</span></div>
+                        </code>
                         <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
                         <p>With the keyword let. For example,</p>
-                        <code><span class="keyword">let</span> <span class="variable">y</span> <span class="punctuation">=</span> <span class="int">13</span><span class="punctuation">;</span></code>
+                        <code>
+                            <div class="no-count"><span class="keyword">let</span> <span class="variable">y</span> <span class="punctuation">=</span> <span class="int">13</span><span class="punctuation">;</span></div>
+                        </code>
                         <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
                     </div>
                 </section>
@@ -187,7 +193,9 @@
                     </header>
                     <div class="main-content">
                         <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
-                        <code><span class="keyword">const</span> <span class="const">PI</span> <span class="punctuation">=</span> <span class="int">3.14</span><span class="punctuation">;</span></code>
+                        <code>
+                            <div class="no-count"><span class="keyword">const</span> <span class="const">PI</span> <span class="punctuation">=</span> <span class="int">3.14</span><span class="punctuation">;</span></div>
+                        </code>
                         <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
                         <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
                         <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
@@ -254,7 +262,6 @@
                             <div>    <span class="variable"></span><span class="variable">statement_1</span></span><span class="punctuation">;</span></div>
                             <div><span class="punctuation">}</span> <span class="keyword">else if</span> <span class="punctuation">(</span><span class="variable">condition_2</span><span class="punctuation">)</span><span class="punctuation">{</span></div>
                             <div>    <span class="variable">statement_2</span><span class="punctuation">;</span></div>
-                            <div><span class="punctuation">}</span></div>
                             <div><span class="punctuation">}</span> <span class="keyword">else if</span> <span class="punctuation">(</span><span class="variable">condition_n</span><span class="punctuation">)</span><span class="punctuation">{</span></div>
                             <div>    <span class="variable">statement_n</span><span class="punctuation">;</span></div>
                             <div><span class="punctuation">}</span> <span class="keyword">else</span> <span class="punctuation">{</span></div>
@@ -338,7 +345,9 @@
                             <div><span class="punctuation">}</span></div>
                         </code>
                         <p>The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.</p>
-                        <code><span class="keyword">return</span> <span class="variable">number</span> <span class="punctuation">*</span> <span class="variable">number</span><span class="punctuation">;</span></code>
+                        <code>
+                            <div class="no-count"><span class="keyword">return</span> <span class="variable">number</span> <span class="punctuation">*</span> <span class="variable">number</span><span class="punctuation">;</span></div>
+                        </code>
                         <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
                     </div>
                 </section>
@@ -355,6 +364,5 @@
                 </section>
             </div>
         </div>
-        <!-- <script src="js/script.js"></script> -->
     </body>
 </html>
