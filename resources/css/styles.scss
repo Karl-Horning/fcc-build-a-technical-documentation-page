@@ -1,0 +1,138 @@
+// colours
+$dark-primary-color: #1976d2;
+$light-primary-color: #bbdefb;
+$primary-color: #2196f3;
+$text-and-icons: #ffffff;
+$accent-color: #607d8b;
+$primary-text: #212121;
+$secondary-text: #757575;
+$divider-color: #bdbdbd;
+
+// #BDBDBD
+$code: #eeeeee;
+$comment: #757575;
+$function: #2196f3;
+$int: #ffa000;
+$keyword: #673ab7;
+$operator: #757575;
+$punctuation: #757575;
+$string: #4caf50;
+$variable: #ff5252;
+
+// styles
+$border: 1px solid $divider-color;
+$page-margin-bottom: 30px;
+
+// grid setup
+html, body { 
+    box-sizing: border-box; 
+    height: 100%;
+    margin: 0;
+}
+
+body { display: flex; }
+
+.container {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-areas: nav main;
+    grid-template-columns: 300px 1fr;
+    height: 100%;
+    justify-content: center;
+}
+
+#navbar {
+    grid-area: nav;
+    height: 100%;
+}
+
+#main-doc {
+    grid-area: main;
+    height: 100%;
+}
+    
+// font families
+body { font-family: 'Roboto', sans-serif; }
+code { font-family: monospace; }
+
+// font-sizes
+body { font-size: 1.5em; }
+h1 { font-size: 1.5em; }
+h2 { font-size: 2em; }
+#navbar a { font-size: 0.7em; }
+
+// font styles
+body { color: $primary-text;}
+
+h1 {
+    border-bottom: $border;
+    color: $secondary-text;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+h2, ul, ol { margin-bottom: $page-margin-bottom; }
+h2 {
+    color: $accent-color; 
+    margin-top: 60px; 
+}
+
+#introduction h2 { margin-top: 0!important; }
+
+p {
+    line-height: 1.2em;
+    margin-bottom: $page-margin-bottom;
+}
+
+a { color: $dark-primary-color; }
+#navbar a { line-height: 2em; }
+
+li { line-height: 1.2em; }
+.nav-link { text-decoration: none; }
+em { background: $light-primary-color; }
+
+// basic styles
+#navbar {
+    border-right: $border;
+    padding: 42px 10px;
+    position: fixed;
+}
+
+#main-doc { padding: 30px 80px; }
+.main-section { 
+    border-bottom: 3px solid $accent-color; 
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+.main-section:last-child { border-bottom: none; }
+
+#main-doc li {
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+
+#main-doc li:last-child { padding-bottom: 0; }
+
+ul > li { list-style-type: square; }
+ol > li { list-style-type: decimal; }
+
+// code styles
+
+code {
+    background: $code;
+    border: $border;
+    display: block;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+code div { white-space: pre; }
+
+.comment { color: $comment; }
+.function { color: $function; }
+.int { color: $int; }
+.keyword { color: $keyword; }
+.operator { color: $operator; }
+.punctuation { color: $punctuation; }
+.string { color: $string; }
+.variable { color: $variable; }
