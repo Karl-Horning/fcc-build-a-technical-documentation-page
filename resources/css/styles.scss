@@ -39,7 +39,6 @@ body { margin: 0; }
 }
 
 #navbar {
-    background: $light-primary-color;
     position: fixed;
     width: 300px;
 }
@@ -64,6 +63,7 @@ h2 { font-size: 2em; }
 
 // font colors
 body { color: $primary-text; }
+h1 { color: $secondary-text; }
 h2 { color: $accent-color; }
 a { color: $dark-primary-color; }
 a:hover { color: $primary-color; }
@@ -71,7 +71,6 @@ a:hover { color: $primary-color; }
 /* font styles */
 h1 {
     border-bottom: $border;
-    color: $secondary-text;
     margin-bottom: 30px; 
     padding-bottom: 30px; 
     padding-top: 30px; 
@@ -95,6 +94,7 @@ section:last-child {
 }
 
 // navbar styles
+#navbar { background: $primary-text; }
 #navbar ul {
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;

@@ -15,7 +15,6 @@ body {
 }
 
 #navbar {
-  background: #bbdefb;
   position: fixed;
   width: 300px;
 }
@@ -59,6 +58,10 @@ body {
   color: #212121;
 }
 
+h1 {
+  color: #757575;
+}
+
 h2 {
   color: #607d8b;
 }
@@ -74,7 +77,6 @@ a:hover {
 /* font styles */
 h1 {
   border-bottom: 1px solid #bdbdbd;
-  color: #757575;
   margin-bottom: 30px;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -98,6 +100,10 @@ section:last-child {
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+#navbar {
+  background: #212121;
 }
 
 #navbar ul {
