@@ -1,33 +1,37 @@
-html, body {
-  box-sizing: border-box;
-  height: 100%;
+/* body styles */
+body {
   margin: 0;
 }
 
-body {
-  display: flex;
-}
-
-.container {
+/* grid styles */
+.grid {
   display: grid;
-  grid-gap: 3px;
-  grid-template-areas: nav main;
-  grid-template-columns: 300px 1fr;
-  height: 100%;
-  justify-content: center;
-}
-
-#navbar {
-  grid-area: nav;
-  height: 100%;
+  grid-template-columns: 300px auto;
 }
 
 #main-doc {
-  grid-area: main;
+  grid-column-start: 2;
+  min-width: 0;
+}
+
+#navbar {
+  background: #bbdefb;
+  position: fixed;
+  width: 300px;
+}
+
+#main-doc, #navbar {
+  box-sizing: border-box;
   height: 100%;
+  margin: auto;
+  padding: 30px;
 }
 
 body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -40,14 +44,14 @@ body {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
 h2 {
   font-size: 2em;
 }
 
-#navbar a {
+.nav-link {
   font-size: 0.7em;
 }
 
@@ -55,86 +59,63 @@ body {
   color: #212121;
 }
 
-h1 {
-  border-bottom: 1px solid #bdbdbd;
-  color: #757575;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-}
-
-h2, ul, ol {
-  margin-bottom: 30px;
-}
-
 h2 {
   color: #607d8b;
-  margin-top: 60px;
-}
-
-#introduction h2 {
-  margin-top: 0 !important;
-}
-
-p {
-  line-height: 1.2em;
-  margin-bottom: 30px;
 }
 
 a {
   color: #1976d2;
 }
 
-#navbar a {
-  line-height: 2em;
+a:hover {
+  color: #2196f3;
 }
 
-li {
-  line-height: 1.2em;
+/* font styles */
+h1 {
+  border-bottom: 1px solid #bdbdbd;
+  color: #757575;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .nav-link {
   text-decoration: none;
 }
 
-em {
-  background: #bbdefb;
+hr {
+  border-bottom: 1px solid #bdbdbd;
 }
 
-#navbar {
-  border-right: 1px solid #bdbdbd;
-  padding: 42px 10px;
-  position: fixed;
-}
-
-#main-doc {
-  padding: 30px 80px;
-}
-
-.main-section {
-  border-bottom: 3px solid #607d8b;
+section {
+  border-bottom: 1px solid #bdbdbd;
+  margin-bottom: 60px;
   padding-bottom: 40px;
-  margin-bottom: 40px;
 }
 
-.main-section:last-child {
+section:last-child {
   border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#navbar ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+}
+
+#navbar li {
+  list-style: none;
 }
 
 #main-doc li {
-  margin-left: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 1.5em;
 }
 
 #main-doc li:last-child {
   padding-bottom: 0;
-}
-
-ul > li {
-  list-style-type: square;
-}
-
-ol > li {
-  list-style-type: decimal;
 }
 
 code {
