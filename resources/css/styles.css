@@ -59,7 +59,7 @@ body {
 }
 
 h1 {
-  color: #757575;
+  color: #ffffff;
 }
 
 h2 {
@@ -74,16 +74,32 @@ a:hover {
   color: #2196f3;
 }
 
+.nav-link {
+  color: #ffffff;
+}
+
+em {
+  background: #bbdefb;
+}
+
 /* font styles */
 h1 {
-  border-bottom: 1px solid #bdbdbd;
+  border-bottom: 3px solid #ffffff;
   margin-bottom: 30px;
   padding-bottom: 30px;
   padding-top: 30px;
 }
 
+h2 {
+  text-shadow: 1px 1px 2px #757575;
+}
+
 .nav-link {
   text-decoration: none;
+}
+
+::selection {
+  background: #ffa000;
 }
 
 hr {

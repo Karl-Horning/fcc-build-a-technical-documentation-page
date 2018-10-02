@@ -23,6 +23,7 @@ $variable: #ff5252;
 
 // styles
 $border: 1px solid $divider-color;
+$primary-border: 3px solid $text-and-icons;
 
 /* body styles */
 body { margin: 0; }
@@ -63,22 +64,26 @@ h2 { font-size: 2em; }
 
 // font colors
 body { color: $primary-text; }
-h1 { color: $secondary-text; }
+h1 { color: $text-and-icons; }
 h2 { color: $accent-color; }
 a { color: $dark-primary-color; }
 a:hover { color: $primary-color; }
+.nav-link { color: $text-and-icons; }
+em { background: $light-primary-color; }
 
 /* font styles */
 h1 {
-    border-bottom: $border;
+    border-bottom: $primary-border;
     margin-bottom: 30px; 
     padding-bottom: 30px; 
     padding-top: 30px; 
 }
+h2 { text-shadow: 1px 1px 2px $secondary-text; }
 .nav-link { text-decoration: none; }
 
 
 // general styles
+::selection { background: $bool; }
 hr { border-bottom: $border; }
 
 section { 
