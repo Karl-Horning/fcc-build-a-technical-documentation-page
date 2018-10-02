@@ -110,7 +110,7 @@
                             <div><span class="keyword">function</span> <span class="function">greetMe</span><span class="punctuation">(</span><span class="variable">yourName</span><span class="punctuation">)</span> <span class="punctuation">{</span></div>
                             <div>    <span class="function">alert</span><span class="punctuation">(</span><span class="string">"Hello "</span> <span class="punctuation">+</span> <span class="variable">yourName</span><span class="punctuation">)</span><span class="punctuation">;</span></div>
                             <div><span class="punctuation">}</span></div>
-                            <div><span class="function">greetMe</span><span class="punctuation">(</span><span class="string">"Hello World"</span><span class="punctuation">)</span><span class="punctuation">;</span></div>
+                            <div><span class="function">greetMe</span><span class="punctuation">(</span><span class="string">"World"</span><span class="punctuation">)</span><span class="punctuation">;</span></div>
                         </code>
                         <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
                     </div>
@@ -169,7 +169,8 @@
                             <div><span class="keyword">if</span> <span class="punctuation">(</span><span class="bool">true</span><span class="punctuation">)</span> <span class="punctuation">{</span></div>
                             <div>  <span class="keyword">let</span> <span class="variable">y</span> <span class="punctuation">=</span> <span class="int">5</span><span class="punctuation">;</span></div>
                             <div><span class="punctuation">}</span></div>
-                            <div><span class="object">console</span><span class="punctuation">.</span><span class="function">log</span><span class="punctuation">(</span><span class="variable">y</span><span class="punctuation">)</span><span class="punctuation">;</span><span class="comment"> // ReferenceError: y is not defined</span></div>      
+                            <div><span class="object">console</span><span class="punctuation">.</span><span class="function">log</span><span class="punctuation">(</span><span class="variable">y</span><span class="punctuation">)</span><span class="punctuation">;</span></div>
+                            <div><span class="comment">// ReferenceError: y is not defined</span></div>
                         </code>
                     </div>
                 </section>
@@ -262,7 +263,7 @@
                             <div><span class="punctuation">}</span> <span class="keyword">else if</span> <span class="punctuation">(</span><span class="variable">condition_n</span><span class="punctuation">)</span><span class="punctuation">{</span></div>
                             <div>    <span class="variable">statement_n</span><span class="punctuation">;</span></div>
                             <div><span class="punctuation">}</span> <span class="keyword">else</span> <span class="punctuation">{</span></div>
-                            <div>    <span class="variable">statement_2</span><span class="punctuation">;</span></div>
+                            <div>    <span class="variable">statement_last</span><span class="punctuation">;</span></div>
                             <div><span class="punctuation">}</span></div>
                         </code>
                         <p>In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:</p>

@@ -7,6 +7,7 @@ $accent-color: #607d8b;
 $primary-text: #212121;
 $secondary-text: #757575;
 $divider-color: #bdbdbd;
+$highlight: #ffeb3b;
 
 $bool: #ffa000;
 $code: #eeeeee;
@@ -26,30 +27,8 @@ $border: 1px solid $divider-color;
 $primary-border: 3px solid $text-and-icons;
 
 /* body styles */
-body { margin: 0; }
-
-/* grid styles */
-.grid {
-    display: grid;
-    grid-template-columns: 300px auto;
-}
-
-#main-doc {
-    grid-column-start: 2;
-    min-width: 0;
-}
-
-#navbar {
-    position: fixed;
-    width: 300px;
-}
-
-#main-doc, #navbar {
-    box-sizing: border-box;
-    height: 100%;
-    margin: auto;
-    padding: 30px;
-}
+body { margin: 0; min-width: 660px; }
+#main-doc, #navbar { box-sizing: border-box; padding: 30px; }
 
 // font families
 body { font-family: "Open Sans", sans-serif; }
@@ -58,7 +37,7 @@ code { font-family: monospace; }
 
 // font-sizes
 body { font-size: 1.5em; }
-h1 { font-size: 1.1em; }
+h1 { font-size: 2.3em; }
 h2 { font-size: 2em; }
 .nav-link { font-size: 0.7em; }
 
@@ -75,15 +54,15 @@ em { background: $light-primary-color; }
 h1 {
     border-bottom: $primary-border;
     margin-bottom: 30px; 
+    margin-top: 0;
     padding-bottom: 30px; 
-    padding-top: 30px; 
+    padding-top: 55px; 
 }
 h2 { text-shadow: 1px 1px 2px $secondary-text; }
 .nav-link { text-decoration: none; }
 
-
 // general styles
-::selection { background: $bool; }
+::selection { background: $highlight; }
 hr { border-bottom: $border; }
 
 section { 
@@ -157,3 +136,46 @@ code {
 
 .no-count { padding-left: 40px; }
 .no-count:before { content: none; }
+
+// media queries
+@media screen and (min-width: 960px) {
+    h1 {
+        font-size: 0.6em;
+        margin-top: 10px;
+    }
+
+    /* grid styles */
+    .grid {
+        display: grid;
+        grid-template-columns: 200px auto;
+    }
+    #main-doc {
+        grid-column-start: 2;
+        min-width: 0;
+    }
+    
+    #navbar {
+        position: fixed;
+        width: 200px;
+    }
+    
+    #main-doc, #navbar {
+        box-sizing: border-box;
+        height: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    h1 {
+        font-size: 1.1em;
+        margin-top: 0;
+    }
+
+    /* grid styles */
+    .grid {
+        grid-template-columns: 300px auto;
+    }
+    
+    #navbar { width: 300px; }
+}
