@@ -1,21 +1,75 @@
-# Responsive Web Design Projects - Build a Technical Documentation Page
+# freeCodeCamp: Build a Technical Documentation Page
 
-- [x] **User Story #1:** I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
-- [x] **User Story #2:** Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
-- [x] **User Story #3:** The first element within each .main-section should be a header element which contains text that describes the topic of that section.
-- [x] **User Story #4:** Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "Javascript and Java" should have a corresponding id="Javascript_and_Java").
-- [x] **User Story #5:** The .main-section elements should contain at least 10 p elements total (not each).
-- [x] **User Story #6:** The .main-section elements should contain at least 5 code elements total (not each).
-- [x] **User Story #7:** The .main-section elements should contain at least 5 li items total (not each).
-- [x] **User Story #8:** I can see a nav element with a corresponding id="navbar".
-- [x] **User Story #9:** The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
-- [x] **User Story #10:** Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
-- [x] **User Story #11:** The header element in the navbar must come before any link (a) elements in the navbar.
-- [x] **User Story #12:** Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
-- [x] **User Story #13:** When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
-- [x] **User Story #14:** On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
-- [x] **User Story #15:** My Technical Documentation page should use at least one media query.
+This project is a Technical Documentation Page created as part of the Responsive Web Design Projects for freeCodeCamp.
 
-## Refernces
+![Preview Image](./resources/img/preview.png)
 
-CSS-only (dynamic) line numbers: https://codepen.io/elomatreb/pen/hbgxp
+## Table of Contents
+- [Overview](#overview)
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Acknowledgments](#acknowledgments)
+- [User Stories](#user-stories)
+- [License](#license)
+- [Author](#author)
+
+## Overview
+
+The Technical Documentation Page is designed to showcase technical documentation on various programming concepts. It includes multiple sections, each focusing on a specific topic, and a navigation menu for easy access to different sections.
+
+## Demo
+
+A live demo of this project is available on CodePen: [Technical Documentation Page Demo](https://codepen.io/karlhorning/pen/pxgybR)
+
+## Features
+
+- **Main Content**: The page features a main element with the ID "main-doc," containing several section elements, each classified as "main-section."
+- **Navigation**: A navigation menu with the ID "navbar" is provided on the left side of the screen. It includes links (a elements) corresponding to each main section, allowing users to navigate directly to a specific topic.
+- **Responsive Design**: The page is designed to be responsive, ensuring a seamless viewing experience on different devices. On regular-sized devices, the navigation menu is displayed on the left side and remains visible at all times.
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/Karl-Horning/fcc-build-a-technical-documentation-page`
+2. Open the project folder: `cd fcc-build-a-technical-documentation-page`
+3. Open the HTML file in your preferred browser.
+
+## Usage
+
+Feel free to explore the Technical Documentation Page to learn more about different programming concepts. Click on the navbar links to navigate to specific sections of interest.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/new-feature`
+3. Commit your changes: `git commit -am 'Add new feature'`
+4. Push to the branch: `git push origin feature/new-feature`
+5. Open a pull request.
+
+## Acknowledgments
+
+- [CSS-only (dynamic) line numbers](https://codepen.io/elomatreb/pen/hbgxp): A reference used for implementing dynamic line numbers in the code sections.
+
+## User Stories
+
+This project fulfils the following user stories:
+
+- Display a main element with the ID "main-doc" containing technical documentation.
+- Include several section elements with the class "main-section," each with a header describing the topic.
+- Provide navigation with a navbar containing links corresponding to each main section.
+- Implement responsiveness, ensuring an optimal viewing experience on various devices.
+- Clicking on a navbar link navigates to the corresponding section in the main documentation.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+Karl Horning: [GitHub](https://github.com/Karl-Horning/) | [LinkedIn](https://www.linkedin.com/in/karl-horning/) | [CodePen](https://codepen.io/karlhorning)
